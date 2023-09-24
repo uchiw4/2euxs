@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color :#ffffff;
+    
+    
+}
+.header-content {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+    justify-content: center; /* Alignement horizontal */
+    width: 100%; /* Assurez-vous qu'il occupe toute la largeur disponible */
+}
+
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    font-size: 2em;
+}
+
+p, a {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.btn {
+    padding: 10px 25px; /* Réduit la largeur du bouton en ajustant le padding horizontal */
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Assure que le bouton ne prend que l'espace nécessaire */
+}
+
+.btn:hover {
+    background-color: #000000;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center;     /* Centrage vertical */
+    height: 10vh;           /* Assure que le conteneur occupe toute la hauteur de la vue */
+}
+
+.btn2 {
+    padding: 10px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn2:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center;     /* Aligner les éléments verticalement */
+    gap: 20px;               /* Espacement entre les éléments */
+    font-size: 2em;
+}
+
+.contact-link,
+.discord-icon {
+    display: flex;
+    align-items: center;     /* Aligner les icônes et le texte verticalement */
+    gap: 8px;                /* Espacement entre l'icône et le texte */
+}
+
+.contact-link:hover {
+    text-decoration: none;  /* Supprime le soulignement du lien lors du survol */
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Si vous voulez que le texte et les autres éléments soient également centrés :
+.contact-page > * {
+    text-align: center;
+}
+*/
+
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crée une grille de deux colonnes */
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.repo-card {
+    display: block;  /* Assurez-vous que la balise <a> se comporte comme un bloc */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fdfdfd;
+    text-decoration: none;  /* Enlever le soulignement du lien */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);  /* Un petit effet de levage au survol */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.repo-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.repo-description {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* fastnotes*/
+.notes-section {
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#notesArea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #444;
+    background-color: #333;
+    color: #fff;
+    resize: vertical;
+}
+
+#saveNote {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4757;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#saveNote:hover {
+    background-color: #e8414b;
+}
+
+
+
+.note-icon {
+    padding: 10px;
+    color: #fff;  
+    font-size: 24px;
+    transition: color 0.3s;
+    margin-left: 10px; 
+    align-self: center; /* Assurez-vous que l'icône est centrée verticalement */
+}
+
+
+.note-icon:hover {
+    color: #ff4757; /* Couleur d'accentuation au survol */
+}
